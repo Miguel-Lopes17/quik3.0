@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #f7f7fc;
+
+}
+
+nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f7fc;
+    position: relative;
+    height: 70px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar .hover {
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 1.2em;
+}
+
+.navbar .hover:hover {
+    color: #8a2be2;
+}
+
+.navbar .hover::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: blueviolet;
+    transition: width .3s;
+    border-radius: 10px;
+    
+}
+
+.navbar .hover:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i{
+    color: #333;
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+header {
+    height: 90vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card-header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 15%;
+}
+
+.card-body h3 {
+    font-size: 1.6em;
+    margin-top: 2%;
+    color: #8a2be2;
+}
+
+.card-body p {
+    font-size: 1.2em;
+    margin-top: 2%;
+}
+
+.card-footer {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.card-footer a {
+    background-color: #f7f7fc;
+    padding: 15px;
+    color: #8a2be2;
+    font-size: 1.6em;
+    border-radius: 10px;  
+    border: 2px solid #8a2be2;
+}
+
+.card-footer a:hover {
+    background-color: #8a2be2;
+    cursor: pointer;
+    color: #f7f7fc;
+    
+}
+
+main {
+    height: 90vh;
+    background: rgb(197,129,236);
+    background: linear-gradient(0deg, rgba(197,129,236,1) 7%, rgba(191,92,244,1) 28%, rgba(169,72,237,1) 43%, rgba(143,78,227,1) 55%, rgba(138,43,226,1) 95%, rgba(148,64,226,1) 100%);
+}
+
+
